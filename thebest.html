@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YOU ARE THE BEST MOTHER</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        color: red;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #f9e3e2; /* Light pink background color */
+    }
+    #confession {
+        margin-top: 20px;
+        padding: 20px;
+        border: 2px solid red;
+        max-width: 300px;
+        white-space: pre-wrap;
+        background-color: rgba(255, 255, 255, 0.8); /* Add transparency to the background color */
+    }
+</style>
+</head>
+<body>
+
+<div id="confession"></div>
+
+<script>
+    var confessionText = `To Mom,
+    
+On this Valentine's Day, I want to express my deepest love and appreciation for you. You are the heart and soul of our family, and your unconditional love has shaped me into the person I am today.
+
+Your warmth, kindness, and strength inspire me every day. You have always been there for us, supporting me and carl through life's ups and downs, and for that, I am forever grateful.
+
+Thank you for your sacrifices, your wisdom, and your unwavering love. You are my guiding light, my rock, and my best friend. I cherish every moment we share, and I am blessed to call you my mom.
+
+Happy Valentine's Day! May your day be filled with all the love and happiness you deserve.
+
+With all my love,
+
+Francis Vin`;
+
+    var index = 0;
+    var confessionLabel = document.getElementById("confession");
+
+    function animateConfession() {
+        if (index < confessionText.length) {
+            confessionLabel.textContent += confessionText[index];
+            index++;
+            setTimeout(animateConfession, 50);
+        }
+    }
+
+    animateConfession();
+</script>
+
+</body>
+</html>
